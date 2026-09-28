@@ -1,0 +1,2863 @@
+BUILD PAWSY FROM SCRATCH.
+
+THIS IS NOT A WEBSITE PROJECT.
+
+THIS IS NOT A LANDING PAGE.
+
+THIS IS NOT A UI MOCKUP.
+
+THIS IS NOT A PROTOTYPE WHERE BUTTONS CAN BE DECORATIVE.
+
+THIS IS THE FIRST FUNCTIONAL VERSION OF A REAL SOCIAL APP, INITIALLY RUNNING AS A WEB APP/PWA BECAUSE THE NATIVE IOS/ANDROID APP WILL COME LATER.
+
+The browser is simply the first distribution method.
+
+The product itself must feel like a real mobile application.
+
+============================================================
+0. ABSOLUTE PRIORITIES
+
+There are five non-negotiable priorities:
+
+1. PAWSY MUST FEEL LIKE A REAL APP.
+2. PAWSY MUST HAVE A DISTINCTIVE INTERACTIVE ANIMAL WORLD.
+3. PAWSY MUST BE FUNCTIONAL, NOT A STATIC MOCKUP.
+4. PAWSY MUST NEVER INVENT FAKE USERS OR FAKE ACTIVITY.
+5. EVERY FEATURE THAT IS PRESENTED AS AVAILABLE MUST ACTUALLY WORK.
+
+Do not sacrifice functionality for visual design.
+
+Do not sacrifice the visual identity for generic functionality.
+
+The goal is BOTH:
+
+Beautiful + Functional.
+
+============================================================
+
+1. WHAT PAWSY IS
+    ============================================================
+
+PAWSY 🐾 is an inclusive social-discovery app.
+
+Its purpose is to help people:
+
+* make friends
+* meet new people
+* find activity partners
+* find people with similar interests
+* discover people nearby
+* join communities
+* create and join plans
+* chat
+* find people to explore places with
+* find hobby partners
+* network
+* optionally date
+* find someone to go outside with
+
+The central human problem Pawsy solves is:
+
+“I want to go somewhere or do something, but I don’t have anyone to go with.”
+
+Pawsy should make meeting people feel natural.
+
+The user should not feel like they are entering a dating website.
+
+The user should feel like they are entering a social world.
+
+============================================================
+2. PAWSY IS FOR EVERYONE
+
+Pawsy is for ALL GENDERS.
+
+It is not a women’s app.
+
+It is not a men’s app.
+
+It is not exclusively for young women.
+
+It is not exclusively for dating.
+
+Do not use visual design that implies the platform belongs to one gender.
+
+The aesthetic can be adorable without being gender-exclusive.
+
+Users may be:
+
+* women
+* men
+* non-binary people
+* people who prefer not to disclose gender
+* people of different ages within the platform’s configured age policy
+* introverts
+* extroverts
+* homebodies
+* social people
+* students
+* professionals
+* gamers
+* artists
+* fashion lovers
+* book lovers
+* travelers
+* people new to a city
+* people simply looking for friends
+
+The platform’s identity is the animal world, not gender.
+
+============================================================
+3. BRAND
+
+Brand name:
+
+PAWSY
+
+Primary brand mark:
+
+PAWSY 🐾
+
+Primary tagline:
+
+“Find your people. Follow your instincts.”
+
+Secondary message:
+
+“You don’t have to go out alone.”
+
+Additional supporting messages:
+
+“Everyone has an animal side.”
+
+“Which one feels like you?”
+
+“Your people are out there.”
+
+“Your next adventure could start with a hello.”
+
+“Ready to hop outside?”
+
+============================================================
+4. BRAND MASCOT
+
+The main Pawsy mascot is a bunny.
+
+The bunny represents the brand.
+
+The bunny is NOT the only animal available to users.
+
+Users can choose different animals to represent themselves.
+
+The bunny should be:
+
+* adorable
+* soft
+* expressive
+* premium
+* warm
+* friendly
+* sophisticated
+* slightly whimsical
+
+The bunny must NOT look:
+
+* childish
+* cheap
+* like a generic emoji
+* like a children’s cartoon
+* overly realistic
+* frightening
+
+Preferred aesthetic:
+
+polished 3D animated character / premium 3D illustration.
+
+The bunny should have:
+
+* soft fur
+* expressive eyes
+* long ears
+* tiny nose
+* subtle facial expressions
+* realistic-looking soft lighting
+* gentle shadows
+* subtle movement
+
+============================================================
+5. VISUAL REFERENCE IMAGES
+
+USE THE PROVIDED PAWSY REFERENCE IMAGES AS VISUAL DESIGN REFERENCES.
+
+The reference images establish the desired visual language.
+
+They are NOT merely inspiration.
+
+Use them to understand:
+
+* composition
+* color
+* character presentation
+* onboarding
+* animal selection
+* app navigation
+* profile design
+* discovery
+* Paw Store
+* overall atmosphere
+
+Do NOT copy them blindly.
+
+Use them as the design direction.
+
+The final implementation should feel like the same product family.
+
+============================================================
+6. DO NOT BUILD A MARKETING WEBSITE
+
+This is extremely important.
+
+DO NOT create:
+
+* traditional website navbar
+* About page as the primary experience
+* Features page
+* Pricing landing page
+* marketing footer
+* fake testimonials
+* fake statistics
+* “10,000 users”
+* “Join thousands of people”
+* fake community counts
+* fake reviews
+* generic startup landing page
+* huge marketing hero section
+
+The user should open Pawsy and immediately enter the application.
+
+The experience should be comparable to opening:
+
+* a social app
+* a messaging app
+* a modern mobile application
+
+The website/browser is only the container.
+
+Pawsy itself is the application.
+
+============================================================
+7. FIRST-OPEN EXPERIENCE
+
+The first screen is the most important part of Pawsy.
+
+When someone opens Pawsy for the first time, DO NOT immediately show a registration form.
+
+Instead, show an interactive animal world.
+
+The user should feel like they have entered a tiny digital world.
+
+The environment should contain:
+
+* soft cream/ivory atmosphere
+* flowers
+* grass
+* trees
+* small pathways
+* water
+* soft clouds
+* warm lighting
+* subtle particles
+* small glowing elements
+* gentle depth
+* foreground objects
+* middle-ground objects
+* background scenery
+
+The environment should feel alive.
+
+============================================================
+8. INTERACTIVE ANIMAL WORLD
+
+Place multiple animals naturally throughout the environment.
+
+Animals should NOT be displayed as a boring row of icons.
+
+They should inhabit the environment.
+
+Animals may be:
+
+* sitting
+* walking
+* hopping
+* sleeping
+* stretching
+* looking around
+* interacting with objects
+* moving their ears
+* flying
+* climbing
+* hiding slightly behind objects
+
+Animals should have independent subtle animations.
+
+The world should feel alive even before the user interacts.
+
+============================================================
+9. ANIMALS
+
+Initial animal collection:
+
+🐰 Bunny
+🐱 Cat
+🦊 Fox
+🐻 Bear
+🦋 Butterfly
+🐍 Snake
+🦌 Deer
+🐼 Panda
+🐨 Koala
+🐺 Wolf
+🦉 Owl
+🐸 Frog
+
+The architecture must allow additional animals to be added later.
+
+Do not hard-code the animal system into one screen.
+
+Animals should be database/configuration-driven where practical.
+
+============================================================
+10. ANIMAL ANIMATIONS
+
+BUNNY:
+
+* subtle breathing
+* blinking
+* nose movement
+* ear movement
+* occasional hop
+* occasional look toward the user
+* happy reaction when selected
+
+CAT:
+
+* blinking
+* tail movement
+* stretching
+* sitting
+
+FOX:
+
+* tail movement
+* looking around
+* occasional walking
+
+BEAR:
+
+* subtle breathing
+* slow movement
+* occasional wave/reaction
+
+BUTTERFLY:
+
+* gentle flying movement
+
+SNAKE:
+
+* subtle body movement
+* occasional coil/uncoil
+
+DEER:
+
+* ear movement
+* looking around
+
+WOLF:
+
+* subtle breathing
+* looking around
+
+OWL:
+
+* blinking
+* head movement
+
+FROG:
+
+* subtle movement
+* occasional hop
+
+Animations must be performant.
+
+Respect reduced-motion accessibility settings.
+
+============================================================
+11. EVERY ANIMAL MUST BE INTERACTIVE
+
+Every animal must be clickable/tappable.
+
+Desktop:
+
+Hovering can produce a subtle reaction.
+
+Mobile:
+
+Tap must produce the interaction.
+
+Do not rely on hover for essential information.
+
+When the user interacts with an animal:
+
+1. Animal reacts.
+2. Animal becomes visually selected.
+3. A beautiful floating information element appears.
+4. The user sees the animal name.
+5. The user sees its playful personality.
+6. The user can select it.
+
+Example:
+
+🐰 BUNNY
+
+“Cozy • Curious • Soft-hearted”
+
+Buttons:
+
+“This is me”
+
+“Keep exploring”
+
+============================================================
+12. ANIMAL IDENTITIES
+
+Animal personalities are playful identities only.
+
+Do NOT present them as scientific psychological assessments.
+
+Examples:
+
+🐰 BUNNY
+“Cozy, curious & soft-hearted.”
+
+🦊 FOX
+“Playful, clever & adventurous.”
+
+🐱 CAT
+“Independent, chill & selective.”
+
+🐻 BEAR
+“Calm, loyal & cozy.”
+
+🦋 BUTTERFLY
+“Creative, social & free-spirited.”
+
+🐍 SNAKE
+“Mysterious, confident & unconventional.”
+
+🦌 DEER
+“Gentle, thoughtful & curious.”
+
+🐺 WOLF
+“Independent, loyal & adventurous.”
+
+🐼 PANDA
+“Chill, friendly & comfort-loving.”
+
+🐨 KOALA
+“Relaxed, cozy & easygoing.”
+
+🦉 OWL
+“Thoughtful, curious & observant.”
+
+🐸 FROG
+“Playful, spontaneous & fun.”
+
+============================================================
+13. ANIMAL SELECTION
+
+When a user chooses an animal:
+
+The animal should react.
+
+For example, if they select Bunny:
+
+The bunny hops toward them.
+
+Its ears move.
+
+A subtle sparkle/particle effect appears.
+
+The environment reacts subtly.
+
+Then show:
+
+“Looks like you found your vibe. 🐰”
+
+Primary button:
+
+“Create my Pawsy profile”
+
+Secondary:
+
+“Explore again”
+
+The selected animal becomes associated with the user’s profile.
+
+============================================================
+14. ONBOARDING
+
+The onboarding must feel like part of Pawsy’s world.
+
+Do NOT suddenly transition to a generic corporate registration form.
+
+Keep the selected animal visible.
+
+The animal can accompany the user throughout onboarding.
+
+STEP 1 — ANIMAL
+
+“You chose Bunny 🐰”
+
+Allow the user to change their animal.
+
+STEP 2 — NAME
+
+“What should people call you?”
+
+Field:
+
+Display name
+
+STEP 3 — INTERESTS
+
+“What are you into?”
+
+Allow multiple selections.
+
+Examples:
+
+Fashion
+Beauty
+Music
+Books
+Movies
+Gaming
+Anime
+Photography
+Travel
+Food
+Coffee
+Fitness
+Art
+Nature
+Technology
+Pets
+Shopping
+Languages
+Study
+Content creation
+Entrepreneurship
+Nightlife
+
+STEP 4 — WHAT ARE YOU LOOKING FOR?
+
+Allow multiple:
+
+Friends
+Activity buddies
+Communities
+Dating
+Networking
+
+Dating must NOT be automatically selected.
+
+STEP 5 — SOCIAL ENERGY
+
+Options:
+
+🏠 Homebody
+
+“I love being at home, but sometimes I want someone to convince me to go out.”
+
+🌱 Slowly getting outside
+
+☕ Casual socializer
+
+✨ Social butterfly
+
+🎉 Always looking for something to do
+
+STEP 6 — LOCATION
+
+Ask for:
+
+Country
+City
+
+Never expose exact home address.
+
+Use approximate location for discovery.
+
+STEP 7 — PROFILE PHOTO
+
+Allow the user to upload a profile picture.
+
+STEP 8 — BIO
+
+Prompt:
+
+“Tell people a little about you.”
+
+Optional prompts:
+
+“I’m the kind of person who…”
+
+“My perfect weekend is…”
+
+“Currently obsessed with…”
+
+STEP 9 — PROFILE PREVIEW
+
+Show exactly how the user’s profile will appear.
+
+Clearly label any tutorial/example content as:
+
+“Example”
+
+Do not create fake users.
+
+STEP 10 — ENTER PAWSY
+
+Button:
+
+“Enter Pawsy 🐾”
+
+============================================================
+15. REAL USERS ONLY
+
+THIS IS NON-NEGOTIABLE.
+
+DO NOT populate the production user experience with fake users.
+
+DO NOT create fictional profiles such as:
+
+“Mia”
+“Alex”
+“Sofia”
+etc.
+
+Do not create fake profile photos.
+
+Do not create fake messages.
+
+Do not create fake likes.
+
+Do not create fake notifications.
+
+Do not create fake community members.
+
+Do not create fake plans.
+
+Do not create fake transactions.
+
+Do not make the application look artificially populated.
+
+If the platform has no users yet, show an honest empty state.
+
+Example:
+
+“Your burrow is still growing. 🐰”
+
+“You’re one of the first people here.”
+
+“Invite someone to Pawsy.”
+
+When real users join, their real profiles can appear.
+
+============================================================
+16. EXAMPLE PROFILE
+
+ONE example profile may be used during onboarding to demonstrate what a finished profile looks like.
+
+It must be clearly labeled:
+
+“Example profile”
+
+It must NEVER appear as a real user in Discover.
+
+The example profile exists only to demonstrate the design.
+
+============================================================
+17. EMPTY DISCOVERY STATE
+
+If there are no real users matching the current user’s discovery criteria:
+
+Show:
+
+“Your people are still out there. 🐾”
+
+“The Pawsy burrow is growing.”
+
+Button:
+
+“Invite someone”
+
+Optional:
+
+“Adjust filters”
+
+Do not invent profiles to fill the screen.
+
+============================================================
+18. MAIN APP EXPERIENCE
+
+After onboarding, enter the actual Pawsy application.
+
+The application should feel like an app.
+
+Mobile-first.
+
+The interface should use:
+
+* bottom navigation
+* compact top controls
+* app-like screens
+* transitions
+* touch-friendly controls
+* full-screen flows where appropriate
+
+Do not use traditional website navigation.
+
+============================================================
+19. MAIN NAVIGATION
+
+Mobile:
+
+🏠 Home
+🔎 Discover
+🐾 Let’s Go
+💬 Messages
+👤 Profile
+
+Additional accessible sections:
+
+Communities
+Notifications
+Paw Store
+Settings
+
+Desktop/tablet layouts may adapt the navigation, but MUST retain the app-like experience.
+
+============================================================
+20. HOME
+
+Home should feel personalized.
+
+Example:
+
+“Good evening, Anna 🐰”
+
+“Who are you going to meet today?”
+
+Show only real data.
+
+Possible sections:
+
+People you may like
+Plans
+Communities
+Messages
+Notifications
+
+If no data exists:
+
+Use honest empty states.
+
+Do not create fake content.
+
+============================================================
+21. DISCOVER
+
+Discover real Pawsy users.
+
+Each user card can show:
+
+Profile photo
+Display name
+Age, if user chooses to display it
+City
+Animal
+Interests
+What they are looking for
+Bio
+
+Actions:
+
+♡ Like
+✕ Pass
+💬 Say Hi
+🐾 Send Paw
+
+Every action must actually work.
+
+============================================================
+22. CLICKING A PROFILE
+
+THIS MUST WORK.
+
+If a user taps/clicks a real person’s profile:
+
+Open that person’s full profile.
+
+Do not do nothing.
+
+The profile should show:
+
+Profile photo
+Animal
+Name
+Bio
+City
+Interests
+What they are looking for
+Social energy
+Shared interests
+Public communities
+Public plans where appropriate
+
+Actions:
+
+Connect
+Say Hi
+Like
+Send Paw
+Report
+Block
+
+Every action must have an actual result.
+
+============================================================
+23. SAY HI
+
+If the user clicks:
+
+“Say Hi”
+
+Open a message composer.
+
+Allow:
+
+predefined introduction
+
+or
+
+custom message.
+
+After sending:
+
+The conversation must actually be created.
+
+The recipient should receive a notification.
+
+The message should appear in Messages.
+
+============================================================
+24. CONNECTIONS
+
+Support:
+
+Like
+Connect
+Accept
+Decline
+Remove connection
+Block
+
+Persist connection state.
+
+Do not pretend an action succeeded if it did not.
+
+============================================================
+25. MESSAGING
+
+Build real messaging functionality.
+
+Support:
+
+One-to-one conversations
+Group conversations where applicable
+Message timestamps
+Unread counts
+Read state
+Typing indicator where supported
+Emoji reactions
+Message sending
+Message deletion according to configured policy
+Mute
+Block
+Report
+
+If the user has no conversations:
+
+“Your inbox is quiet. 🐰”
+
+“Find someone to say hello to.”
+
+Button:
+
+“Discover people”
+
+============================================================
+26. LET’S GO
+
+This is one of Pawsy’s signature features.
+
+The button:
+
+🐾 LET’S GO
+
+opens an actual flow.
+
+Question:
+
+“Want to get out of the house?”
+
+Activities:
+
+☕ Coffee
+🍿 Cinema
+🍜 Food
+🌳 Walk
+🛍️ Shopping
+🎨 Museum
+📸 Photography
+🎮 Gaming
+📚 Study
+🎵 Concert
+🏋️ Fitness
+🎉 Party
+🌆 Explore the city
+🐾 Pet activity
+✏️ Something else
+
+Then:
+
+WHEN?
+
+Today
+Tomorrow
+This weekend
+Choose date
+
+Then:
+
+WHO?
+
+One person
+Small group
+Open group
+
+Then:
+
+WHERE?
+
+City
+Neighborhood
+Public venue
+
+Never expose private residential addresses.
+
+============================================================
+27. CREATE A PLAN
+
+When the user creates a plan:
+
+The plan must actually be saved.
+
+Example:
+
+🐰 Coffee Tomorrow
+
+“Looking for someone to grab coffee with.”
+
+📍 Łódź
+
+🕒 Tomorrow, 15:00
+
+👥 1/3
+
+Other users can discover it.
+
+============================================================
+28. JOINING A PLAN
+
+If a real user clicks:
+
+“Join”
+
+The system must:
+
+* update participation
+* update participant count
+* notify the plan creator
+* create/access the appropriate group conversation
+* show the plan under the user’s Plans
+* prevent duplicate joining
+* allow leaving the plan
+
+============================================================
+29. PLANS
+
+Create:
+
+My Plans
+Joined Plans
+Discover Plans
+Past Plans
+
+Use real database records.
+
+No fake plans.
+
+If there are no plans:
+
+“Nothing planned yet.”
+
+Button:
+
+“Create a plan”
+
+============================================================
+30. COMMUNITIES
+
+Create real interest communities.
+
+Examples can be available as categories, but do not populate them with fake users.
+
+Examples:
+
+🐰 Cozy People
+☕ Coffee Lovers
+🎮 Gamers
+📚 Book Club
+📸 Photography
+👗 Fashion
+🎬 Movie Nights
+🌱 Nature
+🎵 Music
+
+The communities themselves may be preconfigured system communities.
+
+Their membership counts must reflect REAL members.
+
+============================================================
+31. COMMUNITY INTERACTION
+
+Users can:
+
+Join
+Leave
+View
+Post
+Comment
+Create plans
+Report
+
+If there are no posts:
+
+“Be the first to start the conversation.”
+
+Do not invent posts.
+
+============================================================
+32. SOCIAL POSTS
+
+Users can create:
+
+Text
+Photo
+Question
+Poll
+Activity invitation
+
+Users can:
+
+Like
+Comment
+Report
+
+Persist everything.
+
+============================================================
+33. PROFILE
+
+The user’s profile should feel like a small personal Pawsy habitat.
+
+Include:
+
+Profile photo
+Animal
+Name
+Bio
+City
+Interests
+Social energy
+What they’re looking for
+Communities
+Plans
+Received gifts
+Cosmetics
+
+Allow:
+
+Edit profile
+Change animal
+Change interests
+Change bio
+Change photo
+Change privacy
+
+Changes must persist.
+
+============================================================
+34. PROFILE COSMETICS
+
+Users can customize their profile.
+
+Possible cosmetics:
+
+Bunny ears frame
+Flowers
+Stars
+Hearts
+Clouds
+Paw prints
+Animal decorations
+Seasonal themes
+Night sky
+Forest
+Cozy room
+
+Some can be free.
+
+Premium cosmetics can use Paw Credits.
+
+Cosmetics must actually apply to the user’s profile.
+
+============================================================
+35. PAW CREDITS
+
+Create the real monetization system:
+
+🐾 PAW CREDITS
+
+Users can purchase Paw Credits with real money.
+
+The credit balance MUST be server-authoritative.
+
+The frontend must never be allowed to simply assign itself credits.
+
+Database should record:
+
+User ID
+Credit balance
+Transaction ID
+Purchase ID
+Payment provider ID
+Amount
+Currency
+Credit amount
+Payment status
+Refund status
+Timestamp
+
+============================================================
+36. PAW STORE
+
+Create an actual Paw Store.
+
+Sections:
+
+Credits
+Gifts
+Cosmetics
+Boosts
+
+The store should visually feel like a cute shop inside Pawsy.
+
+Not a generic ecommerce page.
+
+============================================================
+37. CREDIT PACKAGES
+
+Create configurable credit packages.
+
+Examples:
+
+100 Paw Credits
+500 Paw Credits
+1,200 Paw Credits
+3,000 Paw Credits
+
+Prices must be configurable from admin.
+
+Do not permanently hard-code pricing.
+
+============================================================
+38. PAYMENTS
+
+Payment must be REAL when the payment provider is configured.
+
+If the user clicks a package:
+
+Open the actual checkout/payment flow.
+
+Do not create a fake:
+
+“Payment successful!”
+
+message without a real transaction.
+
+Payment architecture must support:
+
+Payment initiation
+Checkout
+Payment success
+Payment failure
+Payment cancellation
+Webhook confirmation
+Refund
+Transaction history
+
+Only award Paw Credits after secure server-side verification.
+
+============================================================
+39. PAYMENT ERROR STATES
+
+If payment fails:
+
+Show:
+
+“Your payment didn’t go through.”
+
+Allow:
+
+“Try again”
+
+If payment is cancelled:
+
+“Payment cancelled.”
+
+Do not award credits.
+
+If payment succeeds:
+
+Only after verified confirmation:
+
+“Your Paw Credits have arrived. 🐾”
+
+Update balance.
+
+============================================================
+40. PAW CREDIT USES
+
+Credits may purchase:
+
+Profile boosts
+Virtual gifts
+Cosmetics
+Featured visibility
+Plan promotion
+Priority introductions
+
+Basic communication must remain available without credits.
+
+============================================================
+41. VIRTUAL GIFTS
+
+Create:
+
+🥕 Carrot
+🌷 Flower
+🎀 Bow
+☕ Coffee
+⭐ Star
+🌸 Blossom
+🐰 Bunny
+💗 Heart
+
+Each has a configurable credit cost.
+
+Sending a gift must:
+
+* deduct credits
+* record transaction
+* record gift
+* notify recipient
+* display gift appropriately
+
+Never deduct credits if the transaction fails.
+
+============================================================
+42. PROFILE BOOST
+
+Allow optional visibility boosts.
+
+Example:
+
+“Hop to the front 🐰”
+
+The system must:
+
+* verify balance
+* deduct credits
+* create boost record
+* activate boost
+* expire it correctly
+
+Never promise matches.
+
+Never promise friends.
+
+Only increase the visibility defined by the product.
+
+============================================================
+43. NOTIFICATIONS
+
+Notifications for:
+
+New connection
+New message
+New like
+Plan invitation
+Someone joined your plan
+Community interaction
+Gift received
+Credit purchase
+Boost activation
+Moderation action
+
+Every notification must link to the appropriate destination.
+
+If a notification says:
+
+“Alex sent you a message”
+
+Clicking it MUST open the conversation.
+
+No dead notifications.
+
+============================================================
+44. SEARCH
+
+Search must actually work.
+
+Search real:
+
+Users
+Communities
+Plans
+Interests
+
+No fake results.
+
+If there are no results:
+
+“Nothing found.”
+
+Offer useful filter adjustments.
+
+============================================================
+45. FILTERS
+
+Discovery filters may include:
+
+Age range
+City
+Approximate distance
+Animal
+Interests
+Looking for
+Social energy
+Availability
+
+Filters must actually change the returned data.
+
+============================================================
+46. LOCATION PRIVACY
+
+Never display:
+
+Exact home address
+Exact private coordinates
+Exact real-time residential location
+
+Use:
+
+City
+Approximate area
+Approximate distance
+
+For plans, encourage public locations.
+
+============================================================
+47. SAFETY
+
+Create:
+
+Block
+Report
+Safety Center
+Privacy controls
+Location controls
+
+Meeting reminder:
+
+“When meeting someone new, choose a public place, tell someone where you’re going, and trust your instincts.”
+
+============================================================
+48. REPORTING
+
+Users can report:
+
+Users
+Messages
+Posts
+Plans
+Communities
+
+Report reasons:
+
+Harassment
+Spam
+Scam
+Impersonation
+Inappropriate content
+Threats
+Unsafe behavior
+Other
+
+Reports must be stored.
+
+============================================================
+49. BLOCKING
+
+When a user blocks another user:
+
+They should no longer be able to interact according to the platform’s blocking rules.
+
+Remove/block:
+
+Discovery visibility where appropriate
+Messaging
+Connection interaction
+
+Persist the block.
+
+============================================================
+50. ADMIN DASHBOARD
+
+Create an actual protected admin area.
+
+Admin dashboard should show REAL system data only.
+
+Metrics:
+
+Registered users
+Active users
+New registrations
+Connections
+Messages
+Plans
+Communities
+Credit purchases
+Revenue
+Refunds
+Reports
+Blocked users
+Suspended users
+
+Do not populate metrics with fake numbers.
+
+If the app has:
+
+0 users
+
+show:
+
+Do not make it look more successful than it is.
+
+============================================================
+51. ADMIN MANAGEMENT
+
+Admin can manage:
+
+Users
+Reports
+Animals
+Interests
+Communities
+Plans
+Credit packages
+Credit pricing
+Gift pricing
+Cosmetics
+Boost pricing
+Promotions
+Moderation settings
+
+All administrative actions should be authenticated and authorized.
+
+============================================================
+52. REAL DATA ARCHITECTURE
+
+Use persistent backend storage.
+
+Core entities:
+
+Users
+Profiles
+Animals
+Interests
+UserInterests
+Connections
+Likes
+Messages
+Conversations
+ConversationMembers
+Plans
+PlanParticipants
+Communities
+CommunityMembers
+Posts
+Comments
+Notifications
+Credits
+CreditTransactions
+Purchases
+Payments
+Refunds
+GiftTypes
+Gifts
+Cosmetics
+UserCosmetics
+Boosts
+Reports
+Blocks
+AdminActions
+Settings
+
+Use timestamps.
+
+Use proper relationships.
+
+============================================================
+53. AUTHENTICATION
+
+Implement:
+
+Sign up
+Log in
+Log out
+Forgot password
+Reset password
+Email verification
+
+Protect private routes.
+
+Never store raw passwords.
+
+============================================================
+54. ACCOUNT SETTINGS
+
+Create:
+
+Account
+Privacy
+Notifications
+Security
+Credits
+Blocked users
+Safety
+Help
+Terms
+Privacy Policy
+Community Guidelines
+Logout
+Delete account
+
+Every setting that appears should work.
+
+Do not show controls that do nothing.
+
+============================================================
+55. ACCOUNT DELETION
+
+Allow users to request/delete their account according to the configured retention/legal requirements.
+
+Do not simply hide the profile.
+
+Implement the appropriate backend deletion/deactivation workflow.
+
+============================================================
+56. PRIVACY CONTROLS
+
+Users can configure:
+
+Profile visibility
+Online status
+Location visibility
+Message permissions
+Discovery preferences
+Notification preferences
+
+Persist changes.
+
+============================================================
+57. EMPTY STATES
+
+EMPTY DISCOVER:
+
+“Your people are still out there. 🐾”
+
+“The Pawsy burrow is growing.”
+
+“Invite someone”
+
+EMPTY MESSAGES:
+
+“Your inbox is quiet. 🐰”
+
+“Find someone to say hello to.”
+
+EMPTY PLANS:
+
+“Nothing planned yet.”
+
+“Create a plan.”
+
+EMPTY COMMUNITIES:
+
+“Find a community that feels like you.”
+
+EMPTY NOTIFICATIONS:
+
+“All quiet in the burrow. 🌙”
+
+EMPTY SEARCH:
+
+“Nothing found.”
+
+Every empty state must have a useful action.
+
+============================================================
+58. LOADING STATES
+
+Use Pawsy-themed loading states.
+
+Examples:
+
+Small hopping bunny
+Moving paw
+Subtle animated sparkle
+
+Do not use endless loading animations.
+
+Every loading state must resolve into:
+
+Success
+Empty
+Error
+
+============================================================
+59. ERROR STATES
+
+Example:
+
+“Oops! Our bunny tripped over a carrot. 🥕
+
+Something went wrong.”
+
+Button:
+
+“Try again”
+
+Errors must be actionable.
+
+============================================================
+60. NO DEAD BUTTONS
+
+THIS IS A HARD REQUIREMENT.
+
+Every visible button must do something.
+
+Every:
+
+* button
+* link
+* icon
+* card
+* profile
+* navigation item
+* tab
+* dropdown
+* modal
+* filter
+* search field
+* form
+* payment option
+* notification
+* plan
+* community
+
+must have a defined behavior.
+
+If it cannot currently be implemented, DO NOT PRESENT IT AS AN ACTIVE FEATURE.
+
+Do not put a beautiful button on the screen just because the design looks better.
+
+============================================================
+61. NO FAKE FUNCTIONALITY
+
+Do not simulate:
+
+Successful payments
+Real users
+Real messages
+Real notifications
+Real activity
+Real revenue
+Real likes
+Real plans
+Real participants
+
+except for ONE clearly labeled onboarding example profile if needed to demonstrate the UI.
+
+The actual application must use real persisted data.
+
+============================================================
+62. NAVIGATION TEST
+
+Every navigation item must be tested.
+
+HOME
+→ Home
+
+DISCOVER
+→ Discover
+
+LET’S GO
+→ Let’s Go
+
+MESSAGES
+→ Messages
+
+PROFILE
+→ Profile
+
+PAW STORE
+→ Paw Store
+
+COMMUNITIES
+→ Communities
+
+NOTIFICATIONS
+→ Notifications
+
+SETTINGS
+→ Settings
+
+Back buttons must return to the correct previous screen.
+
+============================================================
+63. PROFILE TEST
+
+Test:
+
+Click profile.
+
+Profile opens.
+
+Click Edit.
+
+Edit screen opens.
+
+Change bio.
+
+Save.
+
+Return to profile.
+
+New bio appears.
+
+Refresh.
+
+New bio remains.
+
+Change animal.
+
+Save.
+
+Animal remains.
+
+Upload photo.
+
+Photo remains.
+
+This must work.
+
+============================================================
+64. MESSAGE TEST
+
+Test:
+
+Open real user.
+
+Click Say Hi.
+
+Send message.
+
+Message appears.
+
+Open Messages.
+
+Conversation appears.
+
+Open conversation.
+
+Message is visible.
+
+Refresh.
+
+Message remains.
+
+No dead buttons.
+
+============================================================
+65. PLAN TEST
+
+Test:
+
+Create plan.
+
+Save plan.
+
+Plan appears in My Plans.
+
+Another real user can see it according to privacy/discovery rules.
+
+User joins.
+
+Participant count changes.
+
+Creator receives notification.
+
+Participants can communicate where configured.
+
+Leave plan.
+
+Participant count updates.
+
+============================================================
+66. COMMUNITY TEST
+
+Test:
+
+Open community.
+
+Join.
+
+Membership persists.
+
+Create post.
+
+Post appears.
+
+Comment.
+
+Comment appears.
+
+Leave.
+
+Membership updates.
+
+============================================================
+67. CREDIT TEST
+
+Test:
+
+Open Paw Store.
+
+Select credit package.
+
+Checkout opens.
+
+Payment is processed by configured provider.
+
+Webhook/secure confirmation received.
+
+Credits are added.
+
+Transaction recorded.
+
+Balance updates.
+
+Purchase history updates.
+
+If payment fails:
+
+No credits added.
+
+If payment is cancelled:
+
+No credits added.
+
+============================================================
+68. CREDIT SPENDING TEST
+
+Test:
+
+User has credits.
+
+User buys gift.
+
+Balance decreases correctly.
+
+Gift appears.
+
+Recipient receives notification.
+
+Transaction recorded.
+
+If transaction fails:
+
+Balance does not decrease.
+
+============================================================
+69. SECURITY
+
+Implement:
+
+Authentication
+Authorization
+Server-side validation
+Input validation
+Secure password handling
+Protected routes
+Server-side credit validation
+Secure payment verification
+Rate limiting where appropriate
+Abuse prevention
+Permission checks
+
+Never trust client-side financial state.
+
+============================================================
+70. ANTI-SPAM
+
+Protect:
+
+Messages
+Connection requests
+Plans
+Posts
+Comments
+Credit actions
+
+Prevent obvious abuse.
+
+Implement configurable rate limits.
+
+============================================================
+71. AGE POLICY
+
+The platform must have a clearly configured minimum age.
+
+Do not allow the application to become an unrestricted adult/minor interaction platform.
+
+Dating functionality must follow the configured age rules.
+
+Do not collect unnecessary age information publicly.
+
+============================================================
+72. GDPR / PRIVACY ARCHITECTURE
+
+Because Pawsy may operate in Europe:
+
+Design for:
+
+Consent
+Privacy
+Data minimization
+Data export
+Account deletion
+Location privacy
+User controls
+
+Do not claim legal compliance automatically.
+
+Provide placeholders for legal documents that must be professionally reviewed before launch.
+
+============================================================
+73. LEGAL PAGES
+
+Create:
+
+Terms of Service
+Privacy Policy
+Cookie Policy
+Community Guidelines
+Safety Guidelines
+Refund Policy
+
+Clearly mark legal placeholder content for professional review.
+
+============================================================
+74. DESIGN SYSTEM
+
+Pawsy should use a consistent design system.
+
+Colors:
+
+Warm cream
+Ivory
+Soft blush
+Dusty rose
+Lavender
+Sage
+Soft blue
+Warm brown
+Cocoa
+Soft charcoal
+
+Do not make the entire application pink.
+
+The visual identity should be cute and universal.
+
+Typography:
+
+Rounded modern sans-serif.
+
+Use a playful display style sparingly.
+
+Cards:
+
+Soft rounded corners.
+
+Subtle shadows.
+
+Soft borders.
+
+Avoid excessive glassmorphism.
+
+Avoid excessive gradients.
+
+============================================================
+75. APP-LIKE VISUAL LANGUAGE
+
+The interface should feel:
+
+* immersive
+* polished
+* compact
+* touch-friendly
+* modern
+* responsive
+
+Avoid traditional webpage structures.
+
+Do not create large blank website sections.
+
+Do not make the user scroll through a marketing page before reaching the product.
+
+============================================================
+76. MOBILE FIRST
+
+Prioritize:
+
+iPhone
+Android
+
+Then:
+
+Tablet
+Desktop
+
+The mobile experience should be the primary experience.
+
+Use:
+
+Bottom navigation
+Touch-friendly controls
+Large tap targets
+Smooth screen transitions
+Mobile-friendly forms
+App-like sheets/modals
+
+============================================================
+77. RESPONSIVE BEHAVIOR
+
+The interface must work at:
+
+320px
+375px
+390px
+430px
+768px
+1024px
+1440px+
+
+No horizontal overflow.
+
+No clipped buttons.
+
+No broken cards.
+
+No overlapping navigation.
+
+No text running outside containers.
+
+============================================================
+78. ACCESSIBILITY
+
+Support:
+
+Keyboard navigation
+Screen readers
+Accessible labels
+Focus states
+Color contrast
+Reduced motion
+Touch targets
+
+Animal interaction must have accessible text alternatives.
+
+============================================================
+79. ANIMATION
+
+Animation is important to Pawsy.
+
+Use:
+
+Parallax
+Animal movement
+Floating particles
+Soft transitions
+Scale
+Opacity
+Depth
+Micro-interactions
+
+But keep animations performant.
+
+Respect:
+
+prefers-reduced-motion.
+
+============================================================
+80. PERFORMANCE
+
+Optimize for mobile devices.
+
+Avoid:
+
+Huge assets
+Unnecessary JavaScript
+Heavy animations
+Long initial load
+Unoptimized images
+
+If real 3D is too expensive for a device:
+
+Gracefully fall back to a lighter 2.5D version.
+
+The application must remain usable.
+
+============================================================
+81. 3D EXPERIENCE
+
+If supported, use real 3D/WebGL for the opening animal world.
+
+If not:
+
+Use convincing 2.5D.
+
+Use:
+
+Foreground
+Midground
+Background
+Parallax
+Perspective
+Depth
+Shadows
+Scaling
+Blur
+
+The result should still feel like a world rather than a flat webpage.
+
+============================================================
+82. PWA
+
+The initial browser version should be installable as a PWA where technically supported.
+
+Include:
+
+App manifest
+App icon
+Splash experience
+Responsive app shell
+Offline-friendly shell where practical
+
+The PWA should open directly into the Pawsy application experience.
+
+============================================================
+83. FUTURE NATIVE APP
+
+Structure the backend/API so the same core system can later support:
+
+Web/PWA
+iOS
+Android
+
+Do not put critical business logic only inside the frontend.
+
+Keep:
+
+Authentication
+Profiles
+Messages
+Plans
+Communities
+Credits
+Payments
+Notifications
+Moderation
+
+accessible through a reusable backend/API architecture.
+
+============================================================
+84. FUTURE APP STORE PAYMENTS
+
+The first version can use web payment infrastructure.
+
+However, design the backend so future native iOS/Android versions can implement the payment systems required by Apple and Google.
+
+Do not assume web checkout can simply be copied into native applications.
+
+============================================================
+85. FUTURE FEATURES ARCHITECTURE
+
+Leave room for:
+
+Push notifications
+Apple login
+Google login
+Video calls
+Voice calls
+Events
+Verified profiles
+Creator profiles
+Brand partnerships
+Sponsored communities
+Virtual pets
+Achievements
+Animal leveling
+Seasonal cosmetics
+Referral rewards
+Subscriptions
+
+Do not implement fake versions of these now.
+
+============================================================
+86. NO “COMING SOON”
+
+DO NOT display:
+
+“Coming soon”
+
+“Under construction”
+
+“Feature coming later”
+
+for an active UI feature.
+
+If a feature is not ready:
+
+DO NOT SHOW IT AS A FEATURE.
+
+Build the available experience around what actually works.
+
+============================================================
+87. REAL DATA ONLY
+
+Production application:
+
+REAL USERS ONLY.
+
+REAL PROFILES ONLY.
+
+REAL MESSAGES ONLY.
+
+REAL PLANS ONLY.
+
+REAL COMMUNITY MEMBERS ONLY.
+
+REAL TRANSACTIONS ONLY.
+
+REAL NOTIFICATIONS ONLY.
+
+If there is no data:
+
+SHOW AN EMPTY STATE.
+
+Never manufacture activity to make the app look popular.
+
+============================================================
+88. ONE EXAMPLE PROFILE ONLY
+
+If an example profile is needed during onboarding:
+
+Label it:
+
+“Example profile”
+
+Make it obvious that it is not a real user.
+
+Do not include it in:
+
+Discover
+Messages
+Likes
+Plans
+Communities
+Notifications
+
+============================================================
+89. ADMIN DATA INTEGRITY
+
+Admin dashboards must display real numbers.
+
+If:
+
+Users = 0
+
+Display:
+
+Do not display:
+
+10K users
+
+unless 10K real users exist.
+
+Revenue must come from actual recorded transactions.
+
+============================================================
+90. USER EXPERIENCE GOAL
+
+The user journey should feel like:
+
+OPEN PAWSY
+
+↓
+
+Enter a magical animal world.
+
+↓
+
+See animals moving.
+
+↓
+
+Explore.
+
+↓
+
+Tap an animal.
+
+↓
+
+Animal reacts.
+
+↓
+
+Choose an animal.
+
+↓
+
+Create profile.
+
+↓
+
+Enter the Pawsy app.
+
+↓
+
+Discover real people.
+
+↓
+
+Connect.
+
+↓
+
+Chat.
+
+↓
+
+Create/join a plan.
+
+↓
+
+Meet people.
+
+↓
+
+Return to Pawsy.
+
+↓
+
+Optionally buy Paw Credits.
+
+This is the product loop.
+
+============================================================
+91. FIRST USER EXPERIENCE
+
+A completely new user with no connections and no friends should still have a beautiful experience.
+
+Do not punish them with empty dashboards.
+
+Instead:
+
+“Welcome to Pawsy. 🐰”
+
+“You’re one of the first.”
+
+“The burrow is growing.”
+
+“Invite someone you know.”
+
+Then show useful ways to:
+
+* complete profile
+* explore animals
+* explore communities
+* create a plan
+* invite friends
+
+But do NOT fake people.
+
+============================================================
+92. VISUAL HIERARCHY
+
+Opening:
+
+ANIMAL WORLD FIRST.
+
+Onboarding:
+
+ANIMAL + USER IDENTITY.
+
+Main app:
+
+PEOPLE + CONNECTIONS + PLANS.
+
+Monetization:
+
+OPTIONAL EXTRAS.
+
+Do not make Paw Credits dominate the application.
+
+The social experience is the product.
+
+============================================================
+93. PAWSY SHOULD FEEL LIKE A WORLD
+
+This is the emotional requirement.
+
+Pawsy should feel like:
+
+A tiny cozy digital world.
+
+The user enters.
+
+The animals live there.
+
+The user chooses one.
+
+That animal becomes part of their identity.
+
+They meet other people.
+
+They discover communities.
+
+They make plans.
+
+They go outside.
+
+They come back.
+
+They decorate their little space.
+
+They collect optional items.
+
+The experience should make people WANT to return.
+
+============================================================
+94. THINGS YOU MUST NOT DO
+
+DO NOT:
+
+* build a generic landing page
+* build a generic dashboard
+* create fake users
+* create fake conversations
+* create fake plans
+* create fake notifications
+* create fake revenue
+* create fake community activity
+* create fake reviews
+* create fake statistics
+* create dead buttons
+* create decorative navigation
+* create fake payment confirmations
+* show “coming soon”
+* use placeholder functionality while presenting it as complete
+* create random screens that aren’t connected
+* create a website navigation experience
+* make dating the default
+* make Pawsy women-only
+* make the entire design pink
+* make the app look like a children’s game
+* make the animals static stickers
+* make the opening screen a registration form
+* sacrifice functionality for aesthetics
+
+============================================================
+95. FUNCTIONAL ACCEPTANCE TEST
+
+BEFORE DECLARING THE BUILD COMPLETE, PERFORM A FULL APPLICATION AUDIT.
+
+Test EVERY clickable element.
+
+Test:
+
+Logo
+Animals
+Animal selection
+Buttons
+Navigation
+Back buttons
+Profile cards
+Profiles
+Like
+Pass
+Connect
+Say Hi
+Messages
+Message sending
+Notifications
+Discover
+Search
+Filters
+Let’s Go
+Plan creation
+Plan joining
+Plan leaving
+Communities
+Community joining
+Posts
+Comments
+Profile editing
+Photo upload
+Animal changing
+Settings
+Privacy
+Blocking
+Reporting
+Paw Store
+Credit packages
+Payment
+Payment failure
+Payment cancellation
+Payment success
+Credit balance
+Gift purchase
+Gift sending
+Boost purchase
+Logout
+Account deletion
+
+Nothing may be left untested.
+
+============================================================
+96. DATA PERSISTENCE TEST
+
+After every major action:
+
+Refresh.
+
+The state must remain correct.
+
+Test:
+
+Profile changes persist.
+
+Messages persist.
+
+Plans persist.
+
+Community membership persists.
+
+Connections persist.
+
+Credit balances persist.
+
+Transactions persist.
+
+Notifications persist.
+
+Settings persist.
+
+============================================================
+97. NAVIGATION AUDIT
+
+Every screen must have:
+
+A way to enter it.
+
+A way to leave it.
+
+A working destination.
+
+No dead ends.
+
+No buttons that simply animate without performing an action.
+
+============================================================
+98. PAYMENT AUDIT
+
+Payment must be tested safely.
+
+If no payment provider credentials are configured yet:
+
+Build the integration architecture and clearly identify the missing configuration internally/admin-side.
+
+Do NOT pretend a purchase succeeded.
+
+Once configured:
+
+Payment must:
+
+Start checkout.
+
+Process payment.
+
+Verify payment.
+
+Record transaction.
+
+Add credits.
+
+Show updated balance.
+
+============================================================
+99. ERROR AUDIT
+
+Every major operation must have:
+
+Loading
+Success
+Empty
+Error
+
+Examples:
+
+Message failed.
+
+Payment failed.
+
+Plan failed.
+
+Profile failed.
+
+Search failed.
+
+Connection failed.
+
+Upload failed.
+
+Each must provide a useful recovery action.
+
+============================================================
+100. FINAL VISUAL AUDIT
+
+Compare the finished application to the supplied Pawsy reference images.
+
+Ask:
+
+Does this look like Pawsy?
+
+Does the opening feel magical?
+
+Are the animals alive?
+
+Does the bunny feel like the mascot?
+
+Does the app feel premium?
+
+Does it feel cute without looking childish?
+
+Does it feel inclusive?
+
+Does it feel like an actual app rather than a website?
+
+Are the screens visually connected?
+
+Does the interface feel like one world?
+
+If the answer is no, revise the visual system before considering the build complete.
+
+============================================================
+101. FINAL PRODUCT STANDARD
+
+The finished product should make someone say:
+
+“Wait… what is this?”
+
+Then:
+
+“This is so cute.”
+
+Then:
+
+“I want to click the bunny.”
+
+Then:
+
+“Which animal am I?”
+
+Then:
+
+“Oh, I’m creating my own profile.”
+
+Then:
+
+“There are actual people here.”
+
+Then:
+
+“I can find someone to go for coffee with.”
+
+Then:
+
+“I actually want to come back.”
+
+That is Pawsy.
+
+============================================================
+FINAL COMMAND
+
+BUILD PAWSY FROM SCRATCH.
+
+DO NOT BUILD A MARKETING WEBSITE.
+
+DO NOT BUILD A STATIC PROTOTYPE.
+
+DO NOT BUILD A COLLECTION OF DISCONNECTED SCREENS.
+
+BUILD THE ACTUAL APP.
+
+Start with the interactive animal world.
+
+Build the onboarding around animal identity.
+
+Build the social experience around real users.
+
+Build the database around persistent real data.
+
+Build the dashboard around real activity.
+
+Build messaging as real messaging.
+
+Build plans as real plans.
+
+Build communities as real communities.
+
+Build Paw Credits as a real monetization system.
+
+Build payments as a real payment integration when configured.
+
+Build the admin system around real data.
+
+Build safety and moderation into the architecture.
+
+Test every interaction.
+
+Test every navigation path.
+
+Test every form.
+
+Test every payment state.
+
+Test persistence.
+
+Do not populate the production experience with fake profiles.
+
+Do not create fake activity.
+
+Do not create dead buttons.
+
+Do not show unavailable features.
+
+Do not use “coming soon.”
+
+If a feature appears in the interface, it must work.
+
+If there is no real data, show an honest empty state.
+
+If an external integration is not configured, do not fake it.
+
+The browser is only the first platform.
+
+Pawsy itself is the app.
+
+THE CORE EXPERIENCE IS:
+
+🐾 ENTER THE WORLD
+
+↓
+
+🐰 CHOOSE YOUR ANIMAL
+
+↓
+
+✨ CREATE YOUR IDENTITY
+
+↓
+
+💬 MEET REAL PEOPLE
+
+↓
+
+🐾 FIND SOMETHING TO DO
+
+↓
+
+🚶 GO OUT TOGETHER
+
+↓
+
+💗 BUILD CONNECTIONS
+
+↓
+
+✨ RETURN TO PAWSY
+
+And the core message remains:
+
+“Find your people. Follow your instincts.”
+
+“You don’t have to go out alone.”
+
+BUILD IT AS A REAL PRODUCT.

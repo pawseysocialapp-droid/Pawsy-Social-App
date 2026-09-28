@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Pawsy Social App"
+description = "A mobile-first social discovery app where people find friends, activity partners, communities, and plans through a warm, expressive animal world."
+version = "1.0.0"
+id = "artifacts/pawsy-app"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21811
+
+[services.development]
+run = "pnpm --filter @workspace/pawsy-app run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/pawsy-app", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/pawsy-app/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21811"
+BASE_PATH = "/"

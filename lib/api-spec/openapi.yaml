@@ -3,13 +3,25 @@ info:
   # Do not change the title, if the title changes, the import paths will be broken
   title: Api
   version: 0.1.0
-  description: API specification
+  description: Pawsy social discovery API
 servers:
   - url: /api
     description: Base API path
 tags:
   - name: health
     description: Health operations
+  - name: profile
+    description: Current Pawsy profile
+  - name: discovery
+    description: People discovery and interactions
+  - name: plans
+    description: Shared activity plans
+  - name: messages
+    description: Conversations and messages
+  - name: store
+    description: Paw Store and wallet
+  - name: subscriptions
+    description: Pawsy Plus subscriptions
 paths:
   /healthz:
     get:
@@ -24,7 +36,271 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+  /me:
+    get:
+      operationId: getMe
+      tags: [profile]
+      summary: Get the current profile
+      responses:
+        "200":
+          description: Current profile
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Profile"
+    patch:
+      operationId: updateMe
+      tags: [profile]
+      summary: Update the current profile
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ProfileUpdate"
+      responses:
+        "200":
+          description: Updated profile
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Profile"
+  /discover:
+    get:
+      operationId: listDiscoverProfiles
+      tags: [discovery]
+      summary: List real profiles matching discovery filters
+      parameters:
+        - $ref: "#/components/parameters/City"
+        - $ref: "#/components/parameters/Animal"
+        - $ref: "#/components/parameters/Interest"
+      responses:
+        "200":
+          description: Profiles
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Profile"
+  /discover/{profileId}/like:
+    post:
+      operationId: likeProfile
+      tags: [discovery]
+      summary: Like a profile
+      parameters:
+        - $ref: "#/components/parameters/ProfileId"
+      responses:
+        "200":
+          description: Interaction result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/InteractionResult"
+  /discover/{profileId}/pass:
+    post:
+      operationId: passProfile
+      tags: [discovery]
+      summary: Pass on a profile
+      parameters:
+        - $ref: "#/components/parameters/ProfileId"
+      responses:
+        "200":
+          description: Interaction result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/InteractionResult"
+  /plans:
+    get:
+      operationId: listPlans
+      tags: [plans]
+      summary: List public plans
+      responses:
+        "200":
+          description: Plans
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Plan"
+    post:
+      operationId: createPlan
+      tags: [plans]
+      summary: Create a plan
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PlanInput"
+      responses:
+        "201":
+          description: Created plan
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Plan"
+  /plans/{planId}/join:
+    post:
+      operationId: joinPlan
+      tags: [plans]
+      summary: Join a public plan
+      parameters:
+        - $ref: "#/components/parameters/PlanId"
+      responses:
+        "200":
+          description: Updated plan
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Plan"
+  /messages:
+    get:
+      operationId: listConversations
+      tags: [messages]
+      summary: List current conversations
+      responses:
+        "200":
+          description: Conversations
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Conversation"
+  /messages/{conversationId}:
+    get:
+      operationId: getConversation
+      tags: [messages]
+      summary: Get a conversation
+      parameters:
+        - $ref: "#/components/parameters/ConversationId"
+      responses:
+        "200":
+          description: Conversation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Conversation"
+    post:
+      operationId: sendMessage
+      tags: [messages]
+      summary: Send a message
+      parameters:
+        - $ref: "#/components/parameters/ConversationId"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MessageInput"
+      responses:
+        "201":
+          description: Sent message
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Message"
+  /wallet:
+    get:
+      operationId: getWallet
+      tags: [store]
+      summary: Get wallet balance and credit packages
+      responses:
+        "200":
+          description: Wallet
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Wallet"
+  /wallet/checkout:
+    post:
+      operationId: startCreditCheckout
+      tags: [store]
+      summary: Start a server-verified Paw Credits checkout
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreditCheckoutInput"
+      responses:
+        "200":
+          description: Checkout session
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CheckoutSession"
+  /subscriptions:
+    get:
+      operationId: getSubscription
+      tags: [subscriptions]
+      summary: Get current Pawsy Plus subscription
+      responses:
+        "200":
+          description: Subscription status
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Subscription"
+  /subscriptions/checkout:
+    post:
+      operationId: startSubscriptionCheckout
+      tags: [subscriptions]
+      summary: Start monthly Pawsy Plus checkout
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SubscriptionCheckoutInput"
+      responses:
+        "200":
+          description: Subscription checkout session
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CheckoutSession"
 components:
+  parameters:
+    ProfileId:
+      name: profileId
+      in: path
+      required: true
+      schema:
+        type: string
+    PlanId:
+      name: planId
+      in: path
+      required: true
+      schema:
+        type: string
+    ConversationId:
+      name: conversationId
+      in: path
+      required: true
+      schema:
+        type: string
+    City:
+      name: city
+      in: query
+      required: false
+      schema:
+        type: string
+    Animal:
+      name: animal
+      in: query
+      required: false
+      schema:
+        type: string
+    Interest:
+      name: interest
+      in: query
+      required: false
+      schema:
+        type: string
   schemas:
     HealthStatus:
       type: object
@@ -33,4 +309,137 @@ components:
           type: string
       required:
         - status
+    Profile:
+      type: object
+      required: [id, displayName, animal, personality, city, interests, lookingFor, bio, isCurrentUser]
+      properties:
+        id: { type: string }
+        displayName: { type: string }
+        age: { type: ["integer", "null"] }
+        animal: { type: string }
+        personality: { type: string }
+        city: { type: string }
+        interests:
+          type: array
+          items: { type: string }
+        lookingFor:
+          type: array
+          items: { type: string }
+        bio: { type: string }
+        socialEnergy: { type: ["string", "null"] }
+        photoUrl: { type: ["string", "null"], format: uri }
+        isCurrentUser: { type: boolean }
+    ProfileUpdate:
+      type: object
+      properties:
+        displayName: { type: string, minLength: 1 }
+        animal: { type: string }
+        city: { type: string }
+        interests:
+          type: array
+          items: { type: string }
+        lookingFor:
+          type: array
+          items: { type: string }
+        bio: { type: string }
+        socialEnergy: { type: string }
+    InteractionResult:
+      type: object
+      required: [status]
+      properties:
+        status: { type: string }
+        conversationId: { type: ["string", "null"] }
+    Plan:
+      type: object
+      required: [id, title, activity, city, dateLabel, capacity, participantCount, creatorName, joined]
+      properties:
+        id: { type: string }
+        title: { type: string }
+        activity: { type: string }
+        city: { type: string }
+        dateLabel: { type: string }
+        capacity: { type: integer }
+        participantCount: { type: integer }
+        creatorName: { type: string }
+        joined: { type: boolean }
+    PlanInput:
+      type: object
+      required: [title, activity, city, dateLabel, capacity]
+      properties:
+        title: { type: string, minLength: 1 }
+        activity: { type: string, minLength: 1 }
+        city: { type: string, minLength: 1 }
+        dateLabel: { type: string, minLength: 1 }
+        capacity: { type: integer, minimum: 2, maximum: 20 }
+    Conversation:
+      type: object
+      required: [id, title, participantName, participantAnimal, lastMessage, unreadCount, messages]
+      properties:
+        id: { type: string }
+        title: { type: string }
+        participantName: { type: string }
+        participantAnimal: { type: string }
+        lastMessage: { type: string }
+        unreadCount: { type: integer }
+        messages:
+          type: array
+          items:
+            $ref: "#/components/schemas/Message"
+    Message:
+      type: object
+      required: [id, body, sentAt, fromCurrentUser]
+      properties:
+        id: { type: string }
+        body: { type: string }
+        sentAt: { type: string, format: date-time }
+        fromCurrentUser: { type: boolean }
+    MessageInput:
+      type: object
+      required: [body]
+      properties:
+        body: { type: string, minLength: 1, maxLength: 2000 }
+    Wallet:
+      type: object
+      required: [balance, packages]
+      properties:
+        balance: { type: integer, minimum: 0 }
+        packages:
+          type: array
+          items:
+            $ref: "#/components/schemas/CreditPackage"
+    CreditPackage:
+      type: object
+      required: [id, credits, price, currency, label]
+      properties:
+        id: { type: string }
+        credits: { type: integer, minimum: 1 }
+        price: { type: number, minimum: 0 }
+        currency: { type: string }
+        label: { type: string }
+    CreditCheckoutInput:
+      type: object
+      required: [packageId]
+      properties:
+        packageId: { type: string }
+    CheckoutSession:
+      type: object
+      required: [status, message]
+      properties:
+        status: { type: string }
+        message: { type: string }
+        checkoutUrl: { type: ["string", "null"], format: uri }
+    Subscription:
+      type: object
+      required: [status, planName, monthlyPrice, currency]
+      properties:
+        status: { type: string }
+        planName: { type: string }
+        monthlyPrice: { type: number, minimum: 0 }
+        currency: { type: string }
+        nextBillingDate: { type: ["string", "null"], format: date }
+    SubscriptionCheckoutInput:
+      type: object
+      required: [plan]
+      properties:
+        plan: { type: string }
 
